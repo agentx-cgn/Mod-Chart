@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sprites>
+
+  <!--
+  ==========================================
+  Chart Bullets
+  ==========================================
+  -->
+
+  <!-- deactivated -->
+  <sprite name="chartDotP0">
+    <image  texture="global/charts/dot.grey.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <!-- activated -->
+  <sprite name="chartDotP1">
+    <image  texture="global/charts/dot.blue.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="chartDotP2">
+    <image  texture="global/charts/dot.red.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="chartDotP3">
+    <image  texture="global/charts/dot.green.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="chartDotP4">
+    <image  texture="global/charts/dot.yellow.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="chartDotP5">
+    <image  texture="global/charts/dot.turquois.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="chartDotP6">
+    <image  texture="global/charts/dot.pink.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="chartDotP7">
+    <image  texture="global/charts/dot.orange.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="chartDotP8">
+    <image  texture="global/charts/dot.lightgray.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <!-- decoration -->
+  <sprite name="chartLineWhite">
+    <image  backcolor="white" size="0 0 100% 100%"  /> 
+  </sprite>
+
+  <sprite name="chartLineGray">
+    <image  backcolor="gray" size="0 0 100% 100%"  /> 
+  </sprite>
+
+
+</sprites>
