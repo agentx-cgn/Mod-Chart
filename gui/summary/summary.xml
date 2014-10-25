@@ -21,7 +21,7 @@
 		</action>
 
 		<object style="TitleText" type="text" size="50%-128 4 50%+128 36">
-			Summary
+			<translatableAttribute id="caption">Summary</translatableAttribute>
 		</object>
 
 		<object type="image" sprite="ForegroundBody" size="20 24 100%-20 80">
@@ -29,7 +29,7 @@
 			<object name="summaryText"
 				type="text"
 				size="50 6 100%-50 100%-20"
-				font="serif-bold-18"
+				font="sans-bold-18"
 				textcolor="255 255 255"
 				text_align="left"
 				text_valign="center"
@@ -38,7 +38,7 @@
 			<object name="timeElapsed"
 				type="text"
 				size="100%-200 8 100%-10 100%-20"
-				font="serif-16"
+				font="sans-16"
 				textcolor="255 255 255"
 				text_align="center"
 				text_valign="center"
@@ -47,7 +47,7 @@
 			<object name="mapName"
 				type="text"
 				size="50 20 100%-50 100%-4"
-				font="serif-bold-16"
+				font="sans-bold-16"
 				textcolor="255 255 255"
 				text_align="center"
 				text_valign="center"
@@ -60,56 +60,68 @@
 
 		<object name="scorePanelButton" type="button" sprite="ForegroundTab" size="20 92 136 120">
 			<action on="Press">selectPanel(0);</action>
-			<object type="text" style="TitleText" ghost="true">Score</object>
+			<object type="text" style="TitleText" ghost="true">
+				<translatableAttribute id="caption">Score</translatableAttribute>
+			</object>
 		</object>
 		
 		<object name="buildingsPanelButton" type="button" sprite="BackgroundTab" size="142 92 260 120">
 			<action on="Press">selectPanel(1);</action>
-			<object type="text" style="TitleText" ghost="true">Buildings</object>
+			<object type="text" style="TitleText" ghost="true">
+				<translatableAttribute id="caption">Buildings</translatableAttribute>
+			</object>
 		</object>
 
 		<object name="unitsPanelButton" type="button" sprite="BackgroundTab" size="266 92 384 120">
 			<action on="Press">selectPanel(2);</action>
-			<object type="text" style="TitleText" ghost="true">Units</object>
+			<object type="text" style="TitleText" ghost="true">
+				<translatableAttribute id="caption">Units</translatableAttribute>
+			</object>
 		</object>
 
 		<object name="resourcesPanelButton" type="button" sprite="BackgroundTab" size="390 92 508 120">
 			<action on="Press">selectPanel(3);</action>
-			<object type="text" style="TitleText" ghost="true">Resources</object>
+			<object type="text" style="TitleText" ghost="true">
+				<translatableAttribute id="caption">Resources</translatableAttribute>
+			</object>
 		</object>
 
 		<object name="marketPanelButton" type="button" sprite="BackgroundTab" size="514 92 632 120">
 			<action on="Press">selectPanel(4);</action>
-			<object type="text" style="TitleText" ghost="true">Market</object>
+			<object type="text" style="TitleText" ghost="true">
+				<translatableAttribute id="caption">Market</translatableAttribute>
+			</object>
 		</object>
 		
 		<object name="miscPanelButton" type="button" sprite="BackgroundTab" size="638 92 756 120">
 			<action on="Press">selectPanel(5);</action>
-			<object type="text" style="TitleText" ghost="true">Miscellaneous</object>
+			<object type="text" style="TitleText" ghost="true">
+				<translatableAttribute id="caption">Miscellaneous</translatableAttribute>
+			</object>
 		</object>
 		
 		<object name="chartPanelButton" type="button" sprite="BackgroundTab" size="762 92 880 120">
 			<action on="Press">selectPanel(6);</action>
 			<object type="text" style="TitleText" ghost="true">Charts</object>
 		</object>
-		
+
 		<object name="scorePanel" type="image" sprite="ForegroundBody" size="20 120 100%-20 100%-58">
 
 			<object size="0 0 100% 100%-50">
 				<object name="playerName0Heading" type="text" style="ModernLeftTabLabelText">
-					Player name
+					<translatableAttribute id="caption">Player name</translatableAttribute>
 				</object>
 				<object name="economyScoreHeading" type="text" style="ModernTabLabelText">
-					Economy&#10;score
+					<translatableAttribute id="caption">Economy score</translatableAttribute>
 				</object>
 				<object name="militaryScoreHeading" type="text" style="ModernTabLabelText">
-					Military&#10;score
+					<translatableAttribute id="caption">Military score</translatableAttribute>
 				</object>
 				<object name="explorationScoreHeading" type="text" style="ModernTabLabelText">
-					Exploration&#10;score
+					<translatableAttribute id="caption">Exploration score</translatableAttribute>
 				</object>
 				<object name="totalScoreHeading" type="text" style="ModernTabLabelText">
-					Total&#10;score
+					<translatableAttribute id="caption">Total score</translatableAttribute>
 				</object>
 			</object>
 
@@ -196,7 +208,7 @@
 				<object name="militaryScoret3"    type="text" style="ModernLabelText"/>
 				<object name="explorationScoret3" type="text" style="ModernLabelText"/>
 				<object name="totalScoret3" 	  type="text" style="ModernLabelText"/>
-			</object>yy
+			</object>
 			
 			<object type="image" name="noTeamsBox0" size="0 65 100% 100%-50" hidden="true"> 
 				<repeat count="8">
@@ -219,34 +231,34 @@
 
 			<object size="0 0 100% 100%-50">
 				<object name="playerName1Heading" type="text" style="ModernLeftTabLabelText">
-					Player name
+					<translatableAttribute id="caption">Player name</translatableAttribute>
 				</object>
 				<object name="buildingsHeading" type="text" style="ModernTabLabelText">
-					Buildings Statistics (Constructed / Lost / Destroyed)
+					<translatableAttribute id="caption">Buildings Statistics (Constructed / Lost / Destroyed)</translatableAttribute>
 				</object>
 				<object name="totalBuildingsHeading" type="text" style="ModernTabLabelText">
-					Total
+					<translatableAttribute id="caption">Total</translatableAttribute>
 				</object>
 				<object name="houseBuildingsHeading" type="text" style="ModernTabLabelText">
-					Houses
+					<translatableAttribute id="caption">Houses</translatableAttribute>
 				</object>
 				<object name="economicBuildingsHeading" type="text" style="ModernTabLabelText">
-					Economic
+					<translatableAttribute id="caption">Economic</translatableAttribute>
 				</object>
 				<object name="outpostBuildingsHeading" type="text" style="ModernTabLabelText">
-					Outposts
+					<translatableAttribute id="caption">Outposts</translatableAttribute>
 				</object>
 				<object name="militaryBuildingsHeading" type="text" style="ModernTabLabelText">
-					Military
+					<translatableAttribute id="caption">Military</translatableAttribute>
 				</object> 
 				<object name="fortressBuildingsHeading" type="text" style="ModernTabLabelText">
-					Fortresses
+					<translatableAttribute id="caption">Fortresses</translatableAttribute>
 				</object>
 				<object name="civCentreBuildingsHeading" type="text" style="ModernTabLabelText">
-					Civ&#160;Centers
+					<translatableAttribute id="caption">Civ Centers</translatableAttribute>
 				</object>
 				<object name="wonderBuildingsHeading" type="text" style="ModernTabLabelText">
-					Wonders
+					<translatableAttribute id="caption">Wonders</translatableAttribute>
 				</object>
 
 			</object>
@@ -393,31 +405,31 @@
 
 			<object size="0 0 100% 100%-50">
 				<object name="playerName2Heading" type="text" style="ModernLeftTabLabelText">
-					Player name
+					<translatableAttribute id="caption">Player name</translatableAttribute>
 				</object>
 				<object name="unitsHeading" type="text" style="ModernTabLabelText">
-					Units Statistics (Trained / Lost / Killed)
+					<translatableAttribute id="caption">Units Statistics (Trained / Lost / Killed)</translatableAttribute>
 				</object>
 				<object name="totalUnitsHeading" type="text" style="ModernTabLabelText">
-					Total
+					<translatableAttribute id="caption">Total</translatableAttribute>
 				</object>
 				<object name="infantryUnitsHeading" type="text" style="ModernTabLabelText">
-					Infantry
+					<translatableAttribute id="caption">Infantry</translatableAttribute>
 				</object>
 				<object name="workerUnitsHeading" type="text" style="ModernTabLabelText">
-					Worker
+					<translatableAttribute id="caption">Worker</translatableAttribute>
 				</object>
 				<object name="cavalryUnitsHeading" type="text" style="ModernTabLabelText">
-					Cavalry
+					<translatableAttribute id="caption">Cavalry</translatableAttribute>
 				</object>
 				<object name="championUnitsHeading" type="text" style="ModernTabLabelText">
-					Champion
+					<translatableAttribute id="caption">Champion</translatableAttribute>
 				</object>
 				<object name="heroesUnitsHeading" type="text" style="ModernTabLabelText">
-					Heroes
+					<translatableAttribute id="caption">Heroes</translatableAttribute>
 				</object>
 				<object name="navyUnitsHeading" type="text" style="ModernTabLabelText">
-					Navy
+					<translatableAttribute id="caption">Navy</translatableAttribute>
 				</object>
 			</object>
 			
@@ -554,31 +566,31 @@
 
 			<object size="0 0 100% 100%-50">
 				<object name="playerName3Heading" type="text" style="ModernLeftTabLabelText">
-					Player name
+					<translatableAttribute id="caption">Player name</translatableAttribute>
 				</object>
 				<object name="resourceHeading" type="text" style="ModernTabLabelText">
-					Resource Statistics (Gathered / Used)
+					<translatableAttribute id="caption">Resource Statistics (Gathered / Used)</translatableAttribute>
 				</object>
 				<object name="foodGatheredHeading" type="text" style="ModernTabLabelText">
-					Food
+					<translatableAttribute id="caption">Food</translatableAttribute>
 				</object>
 				<object name="woodGatheredHeading" type="text" style="ModernTabLabelText">
-					Wood
+					<translatableAttribute id="caption">Wood</translatableAttribute>
 				</object>
 				<object name="stoneGatheredHeading" type="text" style="ModernTabLabelText">
-					Stone
+					<translatableAttribute id="caption">Stone</translatableAttribute>
 				</object>
 				<object name="metalGatheredHeading" type="text" style="ModernTabLabelText">
-					Metal
+					<translatableAttribute id="caption">Metal</translatableAttribute>
 				</object>
 				<object name="totalGatheredHeading" type="text" style="ModernTabLabelText">
-					Total
+					<translatableAttribute id="caption">Total</translatableAttribute>
 				</object>
 				<object name="treasuresCollectedHeading" type="text" style="ModernTabLabelText">
-					Treasures&#10;collected
+					<translatableAttribute id="caption">Treasures collected</translatableAttribute>
 				</object>
 				<object name="resourcesTributedHeading" type="text" style="ModernTabLabelText">
-					Tributes&#10;(Sent / Received)
+					<translatableAttribute id="caption">Tributes (Sent / Received)</translatableAttribute>
 				</object>
 			</object>
 
@@ -715,25 +727,25 @@
 
 			<object size="0 0 100% 100%-50">
 				<object name="playerName4Heading" type="text" style="ModernLeftTabLabelText">
-					Player name
+					<translatableAttribute id="caption">Player name</translatableAttribute>
 				</object>
 				<object name="exchangedFoodHeading" type="text" style="ModernTabLabelText">
-					Food&#10;exchanged
+					<translatableAttribute id="caption">Food exchanged</translatableAttribute>
 				</object>
 				<object name="exchangedWoodHeading" type="text" style="ModernTabLabelText">
-					Wood&#10;exchanged
+					<translatableAttribute id="caption">Wood exchanged</translatableAttribute>
 				</object>
 				<object name="exchangedStoneHeading" type="text" style="ModernTabLabelText">
-					Stone&#10;exchanged
+					<translatableAttribute id="caption">Stone exchanged</translatableAttribute>
 				</object>
 				<object name="exchangedMetalHeading" type="text" style="ModernTabLabelText">
-					Metal&#10;exchanged
+					<translatableAttribute id="caption">Metal exchanged</translatableAttribute>
 				</object>
 				<object name="barterEfficiencyHeading" type="text" style="ModernTabLabelText">
-					Barter&#10;efficiency
+					<translatableAttribute id="caption">Barter efficiency</translatableAttribute>
 				</object>
 				<object name="tradeIncomeHeading" type="text" style="ModernTabLabelText">
-					Trade&#10;income
+					<translatableAttribute id="caption">Trade income</translatableAttribute>
 				</object>
 			</object>
 			
@@ -861,19 +873,19 @@
 
 			<object size="0 0 100% 100%-50">
 				<object name="playerName5Heading" type="text" style="ModernLeftTabLabelText">
-					Player name
+					<translatableAttribute id="caption">Player name</translatableAttribute>
 				</object>
 				<object name="vegetarianRatioHeading" type="text" style="ModernTabLabelText">
-					Vegetarian&#10;ratio
+					<translatableAttribute id="caption">Vegetarian\nratio</translatableAttribute>
 				</object>
 				<object name="feminisationHeading" type="text" style="ModernTabLabelText">
-					Feminisation
+					<translatableAttribute id="caption">Feminisation</translatableAttribute>
 				</object>
 				<object name="killDeathRatioHeading" type="text" style="ModernTabLabelText">
-					Kill / Death&#10;ratio
+					<translatableAttribute id="caption">Kill / Death\nratio</translatableAttribute>
 				</object>
 				<object name="mapExplorationHeading" type="text" style="ModernTabLabelText">
-					Map&#10;exploration
+					<translatableAttribute id="caption">Map\nexploration</translatableAttribute>
 				</object>
 			</object>
 			
@@ -978,162 +990,159 @@
 				</repeat>
 			</object>
 		</object>
-
-
+		
 		<!-- Charts Panel -->
 
 		<object name="chartPanel" type="image" sprite="ForegroundBody" size="20 120 100%-20 100%-58" hidden="true">
 
-			<object size="0 0 100% 100%-30">
+		  <object size="0 0 100% 100%-30">
 
-				<!-- Menu -->
-				<object name="chartMenuUnits" type="button"  size="30 24 100 40">
-					<action on="Press">Charts.action(1);</action>
-					<object name="chartMenuCaptionUnits" type="text" style="TitleText" ghost="true">Units</object>
-				</object>						
+		    <!-- Menu -->
+		    <object name="chartMenuUnits" type="button"  size="30 24 100 40">
+		      <action on="Press">Charts.action(1);</action>
+		      <object name="chartMenuCaptionUnits" type="text" style="TitleText" ghost="true">Units</object>
+		    </object>            
 
-				<object name="chartMenuBuildings" type="button" size="90 24 160 40">
-					<action on="Press">Charts.action(2);</action>
-					<object name="chartMenuCaptionBuildings" type="text" style="TitleText" ghost="true">Buildings</object>
-				</object>				
+		    <object name="chartMenuBuildings" type="button" size="90 24 160 40">
+		      <action on="Press">Charts.action(2);</action>
+		      <object name="chartMenuCaptionBuildings" type="text" style="TitleText" ghost="true">Buildings</object>
+		    </object>        
 
-				<object name="chartMenuArea" type="button" size="150 24 220 40">
-					<action on="Press">Charts.action(3);</action>
-					<object name="chartMenuCaptionArea" type="text" style="TitleText" ghost="true">Area</object>
-				</object>				
+		    <object name="chartMenuArea" type="button" size="150 24 220 40">
+		      <action on="Press">Charts.action(3);</action>
+		      <object name="chartMenuCaptionArea" type="text" style="TitleText" ghost="true">Area</object>
+		    </object>        
 
-				<object name="chartMenuFood" type="button" size="210 24 280 40">
-					<action on="Press">Charts.action(4);</action>
-					<object name="chartMenuCaptionFood" type="text" style="TitleText" ghost="true">Food</object>
-				</object>				
+		    <object name="chartMenuFood" type="button" size="210 24 280 40">
+		      <action on="Press">Charts.action(4);</action>
+		      <object name="chartMenuCaptionFood" type="text" style="TitleText" ghost="true">Food</object>
+		    </object>        
 
-				<object name="chartMenuWood" type="button" size="270 24 340 40">
-					<action on="Press">Charts.action(5);</action>
-					<object name="chartMenuCaptionWood" type="text" style="TitleText" ghost="true">Wood</object>
-				</object>				
+		    <object name="chartMenuWood" type="button" size="270 24 340 40">
+		      <action on="Press">Charts.action(5);</action>
+		      <object name="chartMenuCaptionWood" type="text" style="TitleText" ghost="true">Wood</object>
+		    </object>        
 
-				<object name="chartMenuStone" type="button" size="330 24 400 40">
-					<action on="Press">Charts.action(6);</action>
-					<object name="chartMenuCaptionStone" type="text" style="TitleText" ghost="true">Stone</object>
-				</object>				
+		    <object name="chartMenuStone" type="button" size="330 24 400 40">
+		      <action on="Press">Charts.action(6);</action>
+		      <object name="chartMenuCaptionStone" type="text" style="TitleText" ghost="true">Stone</object>
+		    </object>        
 
-				<object name="chartMenuMetal" type="button" size="390 24 460 40">
-					<action on="Press">Charts.action(7);</action>
-					<object name="chartMenuCaptionMetal" type="text" style="TitleText" ghost="true">Metal</object>
-				</object>				
+		    <object name="chartMenuMetal" type="button" size="390 24 460 40">
+		      <action on="Press">Charts.action(7);</action>
+		      <object name="chartMenuCaptionMetal" type="text" style="TitleText" ghost="true">Metal</object>
+		    </object>        
 
-				<!-- Menu Line -->
-				<object name="chartLineHeader" type="image" sprite="chartLineWhite" size="40 42 100%-40 43" />
+		    <!-- Menu Line -->
+		    <object name="chartLineHeader" type="image" sprite="chartLineWhite" size="40 42 100%-40 43" />
 
-				<!-- Players -->
-				<object name="chartPlayer" type="text" style="TitleText" size="600 46 680 66" textcolor="200 200 200">Player:</object>	
+		    <!-- Players -->
+		    <object name="chartPlayer" type="text" style="TitleText" size="600 46 680 66" textcolor="200 200 200">Player:</object>  
 
-				<object name="chartPlayer1" type="button" size="670 46 700 66">
-					<object name="chartPlayerDot1" type="image" sprite="chartDotP1" size="0 6 8 14" hidden="false" />
-					<object type="text" style="TitleText" ghost="true" textcolor="200 200 200">1</object>
-					<action on="Press">Charts.action(null, 1);</action>
-				</object>	
+		    <object name="chartPlayer1" type="button" size="670 46 700 66">
+		      <object name="chartPlayerDot1" type="image" sprite="chartDotP1" size="0 6 8 14" hidden="false" />
+		      <object type="text" style="TitleText" ghost="true" textcolor="200 200 200">1</object>
+		      <action on="Press">Charts.action(null, 1);</action>
+		    </object>  
 
-				<object name="chartPlayer2" type="button" size="700 46 730 66">
-					<object name="chartPlayerDot2" type="image" sprite="chartDotP2" size="0 6 8 14" hidden="false" />
-					<object type="text" style="TitleText" ghost="true" textcolor="200 200 200">2</object>
-					<action on="Press">Charts.action(null, 2);</action>
-				</object>
+		    <object name="chartPlayer2" type="button" size="700 46 730 66">
+		      <object name="chartPlayerDot2" type="image" sprite="chartDotP2" size="0 6 8 14" hidden="false" />
+		      <object type="text" style="TitleText" ghost="true" textcolor="200 200 200">2</object>
+		      <action on="Press">Charts.action(null, 2);</action>
+		    </object>
 
-				<object name="chartPlayer3" type="button" size="730 46 760 66">
-					<object name="chartPlayerDot3" type="image" sprite="chartDotP3" size="0 6 8 14" hidden="false" />
-					<action on="Press">Charts.action(null, 3);</action>
-					<object type="text" style="TitleText" ghost="true" textcolor="200 200 200">3</object>
-				</object>	
+		    <object name="chartPlayer3" type="button" size="730 46 760 66">
+		      <object name="chartPlayerDot3" type="image" sprite="chartDotP3" size="0 6 8 14" hidden="false" />
+		      <action on="Press">Charts.action(null, 3);</action>
+		      <object type="text" style="TitleText" ghost="true" textcolor="200 200 200">3</object>
+		    </object>  
 
-				<object name="chartPlayer4" type="button" size="760 46 790 66">
-					<object name="chartPlayerDot4" type="image" sprite="chartDotP4" size="0 6 8 14" hidden="false" />
-					<action on="Press">Charts.action(null, 4);</action>
-					<object type="text" style="TitleText" ghost="true" textcolor="200 200 200">4</object>
-				</object>	
+		    <object name="chartPlayer4" type="button" size="760 46 790 66">
+		      <object name="chartPlayerDot4" type="image" sprite="chartDotP4" size="0 6 8 14" hidden="false" />
+		      <action on="Press">Charts.action(null, 4);</action>
+		      <object type="text" style="TitleText" ghost="true" textcolor="200 200 200">4</object>
+		    </object>  
 
-				<object name="chartPlayer5" type="button" size="790 46 820 66">
-					<object name="chartPlayerDot5" type="image" sprite="chartDotP5" size="0 6 8 14" hidden="false" />
-					<action on="Press">Charts.action(null, 5);</action>
-					<object type="text" style="TitleText" ghost="true" textcolor="200 200 200">5</object>
-				</object>	
+		    <object name="chartPlayer5" type="button" size="790 46 820 66">
+		      <object name="chartPlayerDot5" type="image" sprite="chartDotP5" size="0 6 8 14" hidden="false" />
+		      <action on="Press">Charts.action(null, 5);</action>
+		      <object type="text" style="TitleText" ghost="true" textcolor="200 200 200">5</object>
+		    </object>  
 
-				<object name="chartPlayer6" type="button" size="820 46 850 66">
-					<object name="chartPlayerDot6" type="image" sprite="chartDotP6" size="0 6 8 14" hidden="false" />
-					<action on="Press">Charts.action(null, 6);</action>
-					<object type="text" style="TitleText" ghost="true" textcolor="200 200 200">6</object>
-				</object>	
+		    <object name="chartPlayer6" type="button" size="820 46 850 66">
+		      <object name="chartPlayerDot6" type="image" sprite="chartDotP6" size="0 6 8 14" hidden="false" />
+		      <action on="Press">Charts.action(null, 6);</action>
+		      <object type="text" style="TitleText" ghost="true" textcolor="200 200 200">6</object>
+		    </object>  
 
-				<object name="chartPlayer7" type="button" size="850 46 880 66">
-					<object name="chartPlayerDot7" type="image" sprite="chartDotP7" size="0 6 8 14" hidden="false" />
-					<action on="Press">Charts.action(null, 7);</action>
-					<object type="text" style="TitleText" ghost="true" textcolor="200 200 200">7</object>
-				</object>	
+		    <object name="chartPlayer7" type="button" size="850 46 880 66">
+		      <object name="chartPlayerDot7" type="image" sprite="chartDotP7" size="0 6 8 14" hidden="false" />
+		      <action on="Press">Charts.action(null, 7);</action>
+		      <object type="text" style="TitleText" ghost="true" textcolor="200 200 200">7</object>
+		    </object>  
 
-				<object name="chartPlayer8" type="button" size="880 46 910 66">
-					<object name="chartPlayerDot8" type="image" sprite="chartDotP8" size="0 6 8 14" hidden="false" />
-					<action on="Press">Charts.action(null, 8);</action>
-					<object type="text" style="TitleText" ghost="true" textcolor="200 200 200">8</object>
-				</object>	
+		    <object name="chartPlayer8" type="button" size="880 46 910 66">
+		      <object name="chartPlayerDot8" type="image" sprite="chartDotP8" size="0 6 8 14" hidden="false" />
+		      <action on="Press">Charts.action(null, 8);</action>
+		      <object type="text" style="TitleText" ghost="true" textcolor="200 200 200">8</object>
+		    </object>  
 
-				<!-- X/Y Axis -->
-				<object name="chartLineAxisX" type="image" sprite="chartLineGray" size="30 540 960 541" /> 
-				<object name="chartLineAxisY" type="image" sprite="chartLineGray" size="50 63 51 560" />
-				
-				<!-- Y Axis Ticks -->
-				<object name="chartTickAxisYMax"  type="image" sprite="chartLineGray" size="40 70 50 72" />
-				<object name="chartTickAxisYHalf" type="image" sprite="chartLineGray" size="40 300 50 302" />
-				<object name="chartTickTextYMax"  type="text" style="TitleText" text_align = "right" size="5 75 45 90">100</object>
-				<object name="chartTickTextYHalf" type="text" style="TitleText" text_align = "right" size="5 305 45 320">50</object>
+		    <!-- X/Y Axis -->
+		    <object name="chartLineAxisX" type="image" sprite="chartLineGray" size="30 540 960 541" /> 
+		    <object name="chartLineAxisY" type="image" sprite="chartLineGray" size="50 63 51 560" />
+		    
+		    <!-- Y Axis Ticks -->
+		    <object name="chartTickAxisYMax"  type="image" sprite="chartLineGray" size="40 70 50 72" />
+		    <object name="chartTickAxisYHalf" type="image" sprite="chartLineGray" size="40 300 50 302" />
+		    <object name="chartTickTextYMax"  type="text" style="TitleText" text_align = "right" size="5 75 45 90">100</object>
+		    <object name="chartTickTextYHalf" type="text" style="TitleText" text_align = "right" size="5 305 45 320">50</object>
 
-				<!-- X Axis Ticks -->
-				<object name="chartTickAxisXMax"  type="image" sprite="chartLineGray" size="922 540 924 550" />
-				<object name="chartTickAxisXHalf" type="image" sprite="chartLineGray" size="475 540 477 550" />
-				<object name="chartTickTextXMax"  type="text" style="TitleText" text_align = "right" size="850 540 914 560">100 min</object>
-				<object name="chartTickTextXHalf" type="text" style="TitleText" text_align = "right" size="405 540 469 560">50 min</object>
+		    <!-- X Axis Ticks -->
+		    <object name="chartTickAxisXMax"  type="image" sprite="chartLineGray" size="922 540 924 550" />
+		    <object name="chartTickAxisXHalf" type="image" sprite="chartLineGray" size="475 540 477 550" />
+		    <object name="chartTickTextXMax"  type="text" style="TitleText" text_align = "right" size="850 540 914 560">100 min</object>
+		    <object name="chartTickTextXHalf" type="text" style="TitleText" text_align = "right" size="405 540 469 560">50 min</object>
 
-				<!-- Dots -->
-				<repeat count="110">
-					<object name="chartDot1[n]" type="image" sprite="chartDotP1" size="40 40 48 48" hidden="false" />
-				</repeat>						
-			
-				<repeat count="110">
-					<object name="chartDot2[n]" type="image" sprite="chartDotP2" size="40 40 48 48" hidden="false" />
-				</repeat>						
-				
-				<repeat count="110">
-					<object name="chartDot3[n]" type="image" sprite="chartDotP3" size="40 40 48 48" hidden="false" />
-				</repeat>						
-				
-				<repeat count="110">
-					<object name="chartDot4[n]" type="image" sprite="chartDotP4" size="40 40 48 48" hidden="false" />
-				</repeat>						
-				
-				<repeat count="110">
-					<object name="chartDot5[n]" type="image" sprite="chartDotP5" size="40 40 48 48" hidden="false" />
-				</repeat>						
-				
-				<repeat count="110">
-					<object name="chartDot6[n]" type="image" sprite="chartDotP6" size="40 40 48 48" hidden="false" />
-				</repeat>						
-				
-				<repeat count="110">
-					<object name="chartDot7[n]" type="image" sprite="chartDotP7" size="40 40 48 48" hidden="false" />
-				</repeat>						
-				
-				<repeat count="110">
-					<object name="chartDot8[n]" type="image" sprite="chartDotP8" size="40 40 48 48" hidden="false" />
-				</repeat>						
-					
+		    <!-- Dots -->
+		    <repeat count="110">
+		      <object name="chartDot1[n]" type="image" sprite="chartDotP1" size="40 40 48 48" hidden="false" />
+		    </repeat>            
+		  
+		    <repeat count="110">
+		      <object name="chartDot2[n]" type="image" sprite="chartDotP2" size="40 40 48 48" hidden="false" />
+		    </repeat>            
+		    
+		    <repeat count="110">
+		      <object name="chartDot3[n]" type="image" sprite="chartDotP3" size="40 40 48 48" hidden="false" />
+		    </repeat>            
+		    
+		    <repeat count="110">
+		      <object name="chartDot4[n]" type="image" sprite="chartDotP4" size="40 40 48 48" hidden="false" />
+		    </repeat>            
+		    
+		    <repeat count="110">
+		      <object name="chartDot5[n]" type="image" sprite="chartDotP5" size="40 40 48 48" hidden="false" />
+		    </repeat>            
+		    
+		    <repeat count="110">
+		      <object name="chartDot6[n]" type="image" sprite="chartDotP6" size="40 40 48 48" hidden="false" />
+		    </repeat>            
+		    
+		    <repeat count="110">
+		      <object name="chartDot7[n]" type="image" sprite="chartDotP7" size="40 40 48 48" hidden="false" />
+		    </repeat>            
+		    
+		    <repeat count="110">
+		      <object name="chartDot8[n]" type="image" sprite="chartDotP8" size="40 40 48 48" hidden="false" />
+		    </repeat>            
+		      
 
-			</object>
+		  </object>
 
 		</object>
-	
-
 
 		<object type="button" style="StoneButton" size="100%-164 100%-52 100%-24 100%-24">
-			Continue
+			<translatableAttribute id="caption">Continue</translatableAttribute>
 			<action on="Press"><![CDATA[
 				if(!Engine.HasXmppClient())
 				{

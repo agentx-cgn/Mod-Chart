@@ -1,0 +1,9 @@
+{
+  "name": "charts",
+  "label": "0 A.D. Charts Extension",
+  "url": "search the 0A.D. forum",
+  "description": "Visualizes resource consumption, units, etc",
+  "dependencies": ["0ad"],
+  "type": "statistics addon",
+  "version": "0.0.17"
+}
